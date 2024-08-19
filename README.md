@@ -1,73 +1,30 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Proyecto de Ecommerce
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+**Descripción:**  
+Desarrollo de una aplicación de ecommerce completa utilizando NestJS para el backend. Este proyecto incluye la gestión de productos y categorías, autenticación y autorización de usuarios, y la integración de TypeORM para el manejo de bases de datos. Se implementaron funciones avanzadas como la inicialización de datos semilla (seeders) para categorías y productos, asegurando la integridad y consistencia de los datos.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Tecnologías Utilizadas
 
-## Description
+- **Backend:** [NestJS](https://nestjs.com/) 🛠️, [TypeScript](https://www.typescriptlang.org/) 🔧
+- **Base de Datos:** [PostgreSQL](https://www.postgresql.org/) 🗃️, [TypeORM](https://typeorm.io/) 📊
+- **Otros:** [Swagger](https://swagger.io/) 📝 para documentación de API, manejo de dependencias y relaciones entre entidades con TypeORM
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Características Principales
 
-## Installation
+- **Gestión de Productos y Categorías:** CRUD completo para productos y categorías, con validaciones y control de integridad de datos. 📦
+- **Autenticación y Autorización:** Implementación de autenticación básica y middleware de autorización para proteger rutas específicas. 🔐
+- **Seeders de Datos:** Inicialización de datos semilla para categorías y productos, asegurando que las categorías estén disponibles antes de agregar productos. 🌱
+- **Documentación de API:** Documentación completa de la API utilizando Swagger, facilitando el uso y comprensión del backend por parte de otros desarrolladores. 📚
+
+## Responsabilidades
+
+- Diseño e implementación de la arquitectura del backend. 🏗️
+- Desarrollo de servicios y controladores para la gestión de productos y categorías. ⚙️
+- Integración de TypeORM para el manejo de la base de datos. 🔗
+- Creación y ejecución de seeders de datos para inicializar el sistema con datos básicos. 🚀
+- Documentación de la API con Swagger para mejorar la colaboración y el uso del sistema por parte de otros desarrolladores. ✍️
 
 ```bash
-$ npm install
+# Ejemplo de comando para ejecutar un seeder
+npm run seed
 ```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
